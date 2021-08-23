@@ -1,0 +1,41 @@
+package com.atreya._11_graph._06_mst;
+
+import com.atreya._11_graph._04_sssp._00_nodes.WeightedNode;
+
+public class UndirectedEdge {
+    private WeightedNode first;
+    private WeightedNode second;
+    private int weight;
+
+    public UndirectedEdge(WeightedNode first, WeightedNode second, int weight) {
+        this.first = first;
+        this.second = second;
+        this.weight = weight;
+    }
+
+    public WeightedNode getFirst() {
+        return first;
+    }
+    public void setFirst(WeightedNode first) {
+        this.first = first;
+    }
+    public WeightedNode getSecond() {
+        return second;
+    }
+    public void setSecond(WeightedNode second) {
+        this.second = second;
+    }
+    public int getWeight() {
+        return weight;
+    }
+    public void setWeight(int weight) {
+        this.weight = weight;
+    }
+
+    @Override
+    public String toString() {
+        return "Edge (" + first + "," + second + "), weight=" + weight + "]";
+    }
+
+}
+
