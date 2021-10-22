@@ -64,7 +64,7 @@ public class BinarySearchTreeByLinkedList {
         } else if (value > root.getValue()) {
             root.setRight(deleteNodeOfBST(root.getRight(), value));
         } else { // If currentNode is the node to be deleted
-
+            // if node has both children,find successor of that node i.e., least value on right subtree
             if (root.getLeft() != null && root.getRight() != null) { // if nodeToBeDeleted have both children
                 BinaryNode temp = root;
                 BinaryNode minNodeForRight = minimumElement(temp.getRight());// Finding minimum element from right subtree
